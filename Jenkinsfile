@@ -6,7 +6,7 @@ pipeline {
     ORG = 'vlandemaine-orange'
     APP_NAME = 'jx-test2'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY = "docker-registry.jx-test.90.84.242.41.nip.io"
+    DOCKER_REGISTRY = "https://docker-registry.jx-test.90.84.242.41.nip.io"
   }
   stages {
     stage('CI Build and push snapshot') {
