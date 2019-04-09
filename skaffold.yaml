@@ -7,7 +7,7 @@ build:
     docker: {}
   tagPolicy:
     envTemplate:
-      template: '{{.DOCKER_REGISTRY}}/vlandemaine-orange/jx-test2:{{.VERSION}}'
+      template: '{{.DOCKER_REGISTRY}}/vlandemaineorange/jx-test2:{{.VERSION}}'
   local: {}
 deploy:
   kubectl: {}
@@ -18,7 +18,7 @@ profiles:
     - docker: {}
     tagPolicy:
       envTemplate:
-        template: '{{.DOCKER_REGISTRY}}/vlandemaine-orange/jx-test2:{{.DIGEST_HEX}}'
+        template: '{{.DOCKER_REGISTRY}}/vlandemaineorange/jx-test2:{{.DIGEST_HEX}}'
     local: {}
   deploy:
     helm:
@@ -26,5 +26,5 @@ profiles:
       - name: jx-test2
         chartPath: charts/jx-test2
         setValueTemplates:
-          image.repository: '{{.DOCKER_REGISTRY}}/vlandemaine-orange/jx-test2'
+          image.repository: '{{.DOCKER_REGISTRY}}/vlandemaineorange/jx-test2'
           image.tag: '{{.DIGEST_HEX}}'
