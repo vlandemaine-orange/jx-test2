@@ -7,7 +7,7 @@ PORT_NUMBER = 8080
 class MyHandler(BaseHTTPRequestHandler):
 
   def do_GET(self):
-    """Handler for GET requests"""
+    """Handler for GET requests12"""
     self.send_response(200)
     self.send_header('Content-type','image/png')
     self.end_headers()

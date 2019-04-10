@@ -17,6 +17,6 @@ cleanup:
 
 preview:
   image:
-    repository:
+    repository: registry.hub.docker.com/vlandemaineorange/jx-test2
     tag:
     pullPolicy: IfNotPresent
